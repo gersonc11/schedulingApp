@@ -1,10 +1,11 @@
 Project III
 
-# *Scheduling App*
+# *Work Scheduling / Time-Tracking App*
+# *App Name: Trackable*
 
 #### Description: 
 ```
-App allows multipy views of tracking hours, schedule, labor.
+Allows multiple views of tracking hours, schedule, labor.
 ```
 
 ---
@@ -26,10 +27,10 @@ App allows multipy views of tracking hours, schedule, labor.
 
 #### UI Design:
 ```
-(Alex working on layout sketch)
+(Alex working on layout design)
 ```
 
-#### Functionality / Sketch:
+#### Functionality:
 ```
 Clock In – Clock Out 
 Employee Schedule Interface
@@ -47,3 +48,4 @@ MondoDB
 Moesif 
 Hubstaff
 ```
+
