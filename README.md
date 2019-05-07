@@ -1,7 +1,7 @@
 Project III
 
-# *Work Scheduling / Time-Tracking App*
-# *App Name: Trackable*
+# Work Scheduling / Time-Tracking App
+# App Name: Clockable
 
 #### Description: 
 ```
