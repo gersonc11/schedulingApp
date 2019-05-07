@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Container, Row, Col, Form,
+    Row, Col, Form,
     FormGroup, Label, Input,
     Button,
 } from 'reactstrap';
@@ -11,7 +11,10 @@ const styles = {
         border: 'solid 1px black',
         top: 200,
         height: 500,
-        background: 'white'
+        background: 'white',
+        '@media (max-width: 414px)': {
+            marginTop: 1000
+        }
 
     },
     h2: {
@@ -31,7 +34,7 @@ class LoginForm extends Component {
         return (
             <Col md={{ size: 12 }} lg={{ size: 12 }}>
                 <Row>
-                    <Col md={{size:6}} lg={{size: 4, offset: 4}} style={styles.formContainer}>
+                    <Col md={{ size: 6, offset: 3 }} lg={{ size: 4, offset: 4 }} style={styles.formContainer}>
                         <h2 style={styles.h2}>Sign In</h2>
                         <Form style={styles.form}>
                             <Col>
