@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import {
     Row, Col, Form,
-    FormGroup, Label, Input,
-    Button,
+    FormGroup, Label,
+    Button
 } from 'reactstrap';
+import Input from './Input'
 // import './App.css';
 
 const styles = {
