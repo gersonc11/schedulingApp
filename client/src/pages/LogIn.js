@@ -2,11 +2,19 @@
 // user name and password 
 //https://medium.com/@dternyak/react-redux-flask-a-modern-web-application-boilerplate-fce1bfa62594
 import React from 'react';
-import Form from '../components/Login/Form'
+import LoginForm from '../components/Login/Form'
+
+const styles = {
+    body: {
+        background: '#90ccf4'
+    }
+}
 
 const Login = () => {
     return (
-        <Form/>
+        <div style={styles.body}>
+            <LoginForm />
+        </div>
     )
 }
 
