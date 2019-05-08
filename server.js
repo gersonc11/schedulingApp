@@ -1,18 +1,35 @@
-//dependencies to run app
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const PORT = 3000;
+// Dependencies
+// =============================================================
+var express = require("express");
 
 
-app.use(cors());
-app.use(bodyParser.json());
+// Sets up the Express App
+// =============================================================
+var app = express();
+var PORT = process.env.PORT || 3000;
 
-//port that the server is running on
-app.listen(PORT, function() {
-    console.log("Server is running on Port: " + PORT);
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
+// Static directory to be served
+app.use('/public', express.static(__dirname + "/public"));
+
+
+// Routes
+// =============================================================
+require("./routes/api-routes")(app);
+
+
+
+
+// Starts the server to begin listening
+// =============================================================
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
 });
 
 
-//asl;jdflsdf;ladmalsdfmasansg
+
+

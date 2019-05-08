@@ -4,7 +4,7 @@ import { Card, Col, Row } from 'reactstrap';
 const LaborCards = (props) => {
     return (
         <Fragment>
-                <Col md={{size:4}} lg={{ size: 2 }}>
+                <Col md={{size:4}} lg={{ size: 4 }}>
                     <Card>
                         <h1>{props.title}</h1>
                         <p>{props.value}</p>
